@@ -16,6 +16,9 @@
             flex-wrap: wrap;
             margin: 100px 100px 0px 100px;
             visibility: visible;
+            background-image: url("images/pressAKey.png");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
             #showPage{
                 background-color: #202121;
