@@ -17,7 +17,7 @@ keyCoder.btn.addEventListener(`click`, () => {
         keyCoder.container.style.display = `flex`;
 });
 
-document.addEventListener(`keydown`, (event) => {
+window.addEventListener(`keydown`, (event) => {
     // will display keycoder and hide button if keypressed
     keyCoder.welcome.style.display = `none`;
     keyCoder.container.style.display = `flex`;
