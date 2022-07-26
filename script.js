@@ -17,14 +17,14 @@ keyCoder.btn.addEventListener(`click`, () => {
         keyCoder.container.style.display = `flex`;
 });
 
-document.addEventListener(`keypress`, (event) => {
+document.addEventListener(`keydown`, (event) => {
     // will display keycoder and hide button if keypressed
     keyCoder.welcome.style.display = `none`;
     keyCoder.container.style.display = `flex`;
     // will display each event
-    keyCoder.heading.innerHTML = event.which
+    keyCoder.heading.innerHTML = event.keyCode
     keyCoder.key.innerHTML = event.key
     keyCoder.location.innerHTML = event.location  
-    keyCoder.which.innerHTML = event.which
+    keyCoder.which.innerHTML = event.keyCode
     keyCoder.code.innerHTML = event.code
 });
